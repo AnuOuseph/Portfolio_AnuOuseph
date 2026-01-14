@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'vcr';
+  src: url('/fonts/vcr.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+  
+}
