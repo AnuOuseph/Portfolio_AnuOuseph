@@ -1,29 +1,49 @@
-# portfolio_25
+# Interactive Portfolio — Shader-Driven UI Experiments
 
-This template should help get you started developing with Vue 3 in Vite.
+An interactive developer portfolio exploring shader-based image distortion, smooth horizontal navigation, and motion-driven UI patterns using modern frontend technologies.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Overview
 
-## Customize configuration
+This project is my personal developer portfolio, designed as an interactive, motion-driven experience rather than a static showcase.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+The goal was to explore how **shader-based image distortion**, and **micro-interactions** can enhance traditional portfolio layouts into immersive, spatial experiences — while still remaining performant and usable in real-world scenarios.
 
-## Project Setup
+---
 
-```sh
-npm install
-```
+## What I Worked On
 
-### Compile and Hot-Reload for Development
+- Designed and implemented custom **fragment and vertex shaders** for interactive image distortion
+- Integrated **Three.js** rendering into a Vue.js application
+- Implemented smooth mouse interpolation and easing for natural motion
+- Built a horizontally scrolling layout optimized for performance
+- Balanced visual experimentation with usability and accessibility considerations
 
-```sh
-npm run dev
-```
+---
 
-### Compile and Minify for Production
+## Technical Focus
 
-```sh
-npm run build
-```
+This project intentionally focuses on:
+
+- Real-time interaction rather than static visuals
+- GPU-accelerated rendering using WebGL and GLSL
+- Motion as a core UI communication tool
+- Performance-conscious animation and rendering techniques
+
+---
+
+## Tech Stack
+
+- **Vue.js**
+- **Three.js**
+- **GLSL (Fragment & Vertex Shaders)**
+- **JavaScript**
+- **CSS / Tailwind CSS**
+
+---
+
+## Author
+
+**Anu Ouseph**  
+Product Engineer| Interactive UI | Creative Coding
