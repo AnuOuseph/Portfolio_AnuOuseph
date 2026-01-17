@@ -233,7 +233,7 @@ onMounted(() => {
 <template>
   <div
     id="imageContainer"
-    class="overflow-x-auto snap-x snap-mandatory flex w-full h-[600px] scroll-smooth "
+    class="overflow-x-auto snap-x snap-mandatory md:flex hidden w-full h-[600px] scroll-smooth no-scrollbar"
   >
     <div
       v-for="(image, index) in projects"
@@ -249,6 +249,49 @@ onMounted(() => {
         :ref="el => imageElements[index] = el"
       />
       <div class="absolute -right-30 -top-10 text-white uppercase w-[500px] opacity-80">
+        <p>{{ index+1 }}.</p>
+        <br>
+        <p>[ {{ image.title }} ]</p>
+        <br>
+        <p>Crafted with the team at Hoomans </p>
+        <br>
+        <p>Key Contributions: </p>
+        <ul v-for="(item, index) in image.role" :key="index">
+          <li>{{ item }}</li>
+        </ul>
+        <br>
+        <p>Made with:</p>
+        <div class="flex flex-wrap gap-2">
+          <span v-for="(item, index) in image.tech" :key="index">
+            {{ item }}<span v-if="index < image.tech.length - 1"> · </span>
+          </span>
+        </div>
+        <br>
+        <p>View Project:</p>
+        <a
+          :href="image.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline hover:opacity-70 transition"
+        >
+          {{ image.label || image.link }}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="overflow-x-auto snap-x p-4 snap-mandatory flex flex-col md:hidden w-full h-[600px] scroll-smooth "
+  >
+    <div
+      v-for="(image, index) in projects"
+      :key="index"
+      class=" w-[100%] h-auto mt-[100px] flex flex-col gap-4 px-4 opacity-80 "
+    >
+      <img
+        :src="image.image"
+        alt=""
+      />
+      <div class="text-white uppercase opacity-80">
         <p>{{ index+1 }}.</p>
         <br>
         <p>[ {{ image.title }} ]</p>
@@ -307,4 +350,14 @@ img.hidden {
 #image-div:hover {
   filter: saturate(100%);
 }
+/* Hide scrollbar but allow scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
 </style>

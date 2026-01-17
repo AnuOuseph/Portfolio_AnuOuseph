@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div style="font-family: 'vcr', sans-serif;" class="bg-[#0e0e0d] w-full h-screen p-10 relative">
-    <div class="absolute bottom-0 left-0 left-column flex items-end p-18">
+    <div class="absolute bottom-0 left-0 left-column md:flex hidden items-end p-18">
       <div class="z-99 text-green-800 text-sm uppercase">
         <p>M.SC. Research in Media Engineering</p>
         <a
@@ -16,7 +16,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <a href="mailto:anu.ouseph@email.com" class="cursor-pointer">→ Contact</a>
       </div>
     </div>
-    <div class="absolute w-[500px] h-[300px] top-0 right-0 bg-black"></div>
+    <div class="absolute w-[500px] h-[300px] md:flex hidden top-0 right-0 bg-black"></div>
   <div class="w-full h-full border-[0.5px] border-[#ffffff44] flex-center relative z-[50]">
     <RouterView />
   </div>
