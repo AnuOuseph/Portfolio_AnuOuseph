@@ -1,49 +1,52 @@
-# Interactive Portfolio — Shader-Driven UI Experiments
+# anu ouseph — portfolio
 
-An interactive developer portfolio exploring shader-based image distortion, smooth horizontal navigation, and motion-driven UI patterns using modern frontend technologies.
+> Interactive portfolio built with custom GLSL shaders, scroll-driven animations, and immersive 3D visuals.
 
----
+**[anuouseph.vercel.app](https://anuouseph.vercel.app)**
 
-## Overview
 
-This project is my personal developer portfolio, designed as an interactive, motion-driven experience rather than a static showcase.
+## What's inside
 
-The goal was to explore how **shader-based image distortion**, and **micro-interactions** can enhance traditional portfolio layouts into immersive, spatial experiences — while still remaining performant and usable in real-world scenarios.
+A personal portfolio that goes beyond a static page. Every interaction is intentional — from the shader-driven project gallery to the scroll-triggered transitions. Built to reflect the kind of frontend work I care about: interfaces that feel alive.
 
----
-
-## What I Worked On
-
-- Designed and implemented custom **fragment and vertex shaders** for interactive image distortion
-- Integrated **Three.js** rendering into a Vue.js application
-- Implemented smooth mouse interpolation and easing for natural motion
-- Built a horizontally scrolling layout optimized for performance
-- Balanced visual experimentation with usability and accessibility considerations
+**Key details:**
+- Custom GLSL shaders for mouse-driven image distortion and chromatic aberration effects
+- Scroll-driven animations tied directly to scroll position, not triggered on a delay
+- 3D project gallery using Three.js with optimized rendering for smooth performance on mid-range devices
+- Terminal-style typography and dark aesthetic built entirely with Tailwind CSS
 
 ---
 
-## Technical Focus
+## Built with
 
-This project intentionally focuses on:
+| Layer | Tech |
+|---|---|
+| Framework | Vue.js |
+| 3D / Shaders | Three.js · GLSL |
+| Animation | GSAP · ScrollTrigger |
+| Styling | Tailwind CSS |
+| Deployment | Vercel |
 
-- Real-time interaction rather than static visuals
-- GPU-accelerated rendering using WebGL and GLSL
-- Motion as a core UI communication tool
-- Performance-conscious animation and rendering techniques
+---
+
+## Running locally
+
+```bash
+git clone https://github.com/AnuOuseph/Portfolio_AnuOuseph
+cd Portfolio_AnuOuseph
+npm install
+npm run dev
+```
 
 ---
 
-## Tech Stack
+## About me
 
-- **Vue.js**
-- **Three.js**
-- **GLSL (Fragment & Vertex Shaders)**
-- **JavaScript**
-- **CSS / Tailwind CSS**
+Full-stack developer focused on real-time and interactive interfaces. Currently doing M.Sc. in Media Engineering at TU Ilmenau, Germany. Previously built production systems at Hoomans.co including a real-time digital signage platform running on 500+ distributed displays.
 
----
+[LinkedIn](https://linkedin.com/in/anuouseph) · [GitHub](https://github.com/AnuOuseph) · [Email](mailto:anuouseph04@gmail.com)
 
 ## Author
 
 **Anu Ouseph**  
-Product Engineer| Interactive UI | Creative Coding
+Full-stack developer| Interactive UI | Creative Coding
