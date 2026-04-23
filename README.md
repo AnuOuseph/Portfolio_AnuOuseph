@@ -2,6 +2,9 @@
 
 > Interactive portfolio built with custom GLSL shaders, scroll-driven animations, and immersive 3D visuals.
 
+![image1](./assets/image1.png)
+![image2](./assets/image2.png)
+
 **[anuouseph.vercel.app](https://anuouseph.vercel.app)**
 
 
