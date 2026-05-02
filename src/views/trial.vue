@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import * as THREE from 'three';
+import projects from '/public/data.js';
 
 // List of image URLs
 const images = [
@@ -10,84 +11,7 @@ const images = [
   new URL('../assets/images/lagom.png', import.meta.url).href
 ];
 
-const projects = [
-  {
-    "image":new URL('../assets/images/hoomans.png', import.meta.url).href,
-    "title":"HOOMANS.CO",
-    "context":"Marketing website designed to communicate brand identity through motion and interaction.",
-    "role":[
-      "Complex scroll-driven storytelling combined with interactive D3.js data visualizations.",
-      "Implemented scroll-driven animations across pages",
-      "Built interactive D3.js data visualizations",
-      "Optimized animation performance for smooth user experience"
-    ],
-    "tech":[
-      "Vue.js",
-      "D3.js",
-      "GSAP",
-      "Tailwind CSS"
-    ],
-    "link":"https://hoomans.co",
-    "label": "hoomans.co"
-  },
-  {
-    "image":new URL('../assets/images/lyst.png', import.meta.url).href,
-    "title":"lyst.so",
-    "context":"Real-time digital signage CMS used to manage and sync content across 500+ distributed displays.",
-    "role":[
-      "Built a real-time digital signage cms for managing distributed screens",
-      "Implemented WebSocket-based sync achieving <200ms latency",
-      "Scalable architecture supporting hundreds of concurrent devices",
-      "Deployed and maintained the platform on AWS (Lightsail, S3) with automated CI/CD pipelines"
-    ],
-    "tech":[
-      "Vue.js",
-      "Golang",
-      "WebSockets",
-      "PostgreSQL",
-      "AWS",
-      "Tailwind CSS"
-    ],
-    "link":"https://lyst.so",
-    "label": "lyst.so"
-  },
-  {
-    "image":new URL('../assets/images/baystreet.png', import.meta.url).href,
-    "title":"Baystreet.finance",
-    "context":"Responsive financial services website built and shipped in a one-week sprint.",
-    "role":[
-      "Built a multi-section, responsive layout in a 1-week sprint",
-      "Implemented subtle animations to enhance user experience without distraction",
-      "Ensured cross-device compatibility and accessibility-friendly structure"
-    ],
-    "tech":[
-      "Vue.js",
-      "GSAP",
-      "Tailwind CSS"
-    ],
-    "link":"https://baystreet.finance",
-    "label": "baystreet.finance"
-  },
-  {
-    "image":new URL('../assets/images/lagom.png', import.meta.url).href,
-    "title":"Lagom.app",
-    "context":"Marketing website for a digital wellness product, focused on visualizing user behavior and usage trends.",
-    "role":[
-      "Built animated charts and transitions to visualize usage trends",
-      "Data-driven UI using animated visual feedback",
-      "Focused on smooth interactions and responsive layouts",
-      "Balanced animation, performance, and clarity of information"
-    ],
-    "tech":[
-      "Vue.js",
-      "D3.js",
-      "GSAP",
-      "Tailwind CSS"
-    ],
-    "link":"https://findlagom.app",
-    "label": "findlagom.app"
-  },
-];
+
 
 const canvasContainers = ref([]);
 const imageElements = ref([]);
@@ -253,7 +177,7 @@ onMounted(() => {
         <br>
         <p>[ {{ image.title }} ]</p>
         <br>
-        <p>Crafted with the team at Hoomans </p>
+        <p>{{ image.contribution }} </p>
         <br>
         <p>Key Contributions: </p>
         <ul v-for="(item, index) in image.role" :key="index">
