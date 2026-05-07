@@ -1,5 +1,42 @@
 const projects = [
   {
+    "image":new URL('../src/assets/images/ar.webp', import.meta.url).href,
+    "title":"spatial",
+    "context":"Marketing website for a digital wellness product, focused on visualizing user behavior and usage trends.",
+    "role":[
+      "Browser-based 3D furniture configurator using real GLTF models with drag-to-rotate orbit controls and real-time material switching",
+      "Implemented scene graph traversal and material cloning for per-part customization on multi-mesh models",
+    ],
+    "tech":[
+      "React", 
+      "Three.js", 
+      "react-three-fiber", 
+      "Tailwind CSS",
+    ],
+    "link":"https://spatial-ar-furniture-configurator.vercel.app/",
+    "label": "spatial",
+    "contribution": "personal project"
+  },
+  {
+    "image":new URL('../src/assets/images/mira.webp', import.meta.url).href,
+    "title":"mira",
+    "context":"Marketing website for a digital wellness product, focused on visualizing user behavior and usage trends.",
+    "role":[
+      "Built a full-stack music analysis and comparison tool whereusers upload audio and get tempo, key, genre, mood, and instrument features extracted in real time",
+      "Implemented music similarity comparison using weighted cosine similarity over MFCC, chroma, and spectral feature vectors",
+    ],
+    "tech":[
+      "Next.js", 
+      "FastAPI", 
+      "Python", 
+      "Librosa", 
+      "Hugging Face"
+    ],
+    "link":"https://mir-a.vercel.app",
+    "label": "mira",
+    "contribution": "personal project"
+  },
+  {
     "image":new URL('../src/assets/images/hoomans.webp', import.meta.url).href,
     "title":"HOOMANS.CO",
     "context":"Marketing website designed to communicate brand identity through motion and interaction.",
@@ -78,44 +115,7 @@ const projects = [
     "link":"https://findlagom.app",
     "label": "findlagom.app",
     "contribution": "crafted with the team at hoomans.co"
-  },
-  {
-    "image":new URL('../src/assets/images/mira.webp', import.meta.url).href,
-    "title":"mira",
-    "context":"Marketing website for a digital wellness product, focused on visualizing user behavior and usage trends.",
-    "role":[
-      "Built a full-stack music analysis and comparison tool whereusers upload audio and get tempo, key, genre, mood, and instrument features extracted in real time",
-      "Implemented music similarity comparison using weighted cosine similarity over MFCC, chroma, and spectral feature vectors",
-    ],
-    "tech":[
-      "Next.js", 
-      "FastAPI", 
-      "Python", 
-      "Librosa", 
-      "Hugging Face"
-    ],
-    "link":"https://mir-a.vercel.app",
-    "label": "mira",
-    "contribution": "personal project"
-  },
-  {
-    "image":new URL('../src/assets/images/ar.webp', import.meta.url).href,
-    "title":"spatial",
-    "context":"Marketing website for a digital wellness product, focused on visualizing user behavior and usage trends.",
-    "role":[
-      "Browser-based 3D furniture configurator using real GLTF models with drag-to-rotate orbit controls and real-time material switching",
-      "Implemented scene graph traversal and material cloning for per-part customization on multi-mesh models",
-    ],
-    "tech":[
-      "React", 
-      "Three.js", 
-      "react-three-fiber", 
-      "Tailwind CSS",
-    ],
-    "link":"https://spatial-ar-furniture-configurator.vercel.app/",
-    "label": "spatial",
-    "contribution": "personal project"
-  },
+  }
 ];
 
 export default projects;
