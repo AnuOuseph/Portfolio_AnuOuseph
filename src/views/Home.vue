@@ -59,7 +59,7 @@
               class="resume-link cursor-pointer"
             >→ Resume</a>
             <br>
-            <a href="mailto:anu.ouseph@email.com" class="cursor-pointer">→ Contact</a>
+            <a href="mailto:anuouseph04@gmail.com" class="cursor-pointer">→ Contact</a>
           </div>
         </div>
       </div>
