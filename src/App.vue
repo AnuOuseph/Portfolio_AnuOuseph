@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
           class="resume-link cursor-pointer"
         >→ Resume</a>
         <br>
-        <a href="mailto:anu.ouseph@email.com" class="cursor-pointer">→ Contact</a>
+        <a href="mailto:anuouseph04@gmail.com" class="cursor-pointer">→ Contact</a>
       </div>
     </div>
     <div class="absolute w-[500px] h-[300px] md:flex hidden top-0 right-0 bg-black"></div>
